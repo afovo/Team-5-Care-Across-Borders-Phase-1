@@ -44,7 +44,7 @@ class ConversationContext(BaseModel):
     internet_connectivity: str = Field(default="Intermittent")
 
 # Function to create the knowledge base for Ghana healthcare context
-def create_knowledge_base():
+def create_knowledge_base(openai_api_key):
     # Sample text with information about Ghana's healthcare system
     with open("ghana_healthcare_context.txt", "w") as f:
         f.write("""
@@ -103,7 +103,7 @@ def create_knowledge_base():
     splits = text_splitter.split_documents(all_docs)
     
     # Create vector store
-    vectorstore = FAISS.from_documents(documents=splits, embedding=OpenAIEmbeddings())
+    vectorstore = FAISS.from_documents(documents=splits, embedding=OpenAIEmbeddings(openai_api_key=openai_api_key))
     retriever = vectorstore.as_retriever()
     
     return retriever
@@ -329,7 +329,7 @@ class HealthcareAgent:
         self.llm = ChatOpenAI(model_name="gpt-4", temperature=0.7, api_key=openai_api_key)
         self.context = ConversationContext()
         self.memory = ConversationBufferMemory(return_messages=True, memory_key="chat_history")
-        self.retriever = create_knowledge_base()
+        self.retriever = create_knowledge_base(openai_api_key)
         self.example_dialogues = self._load_example_dialogues()
         self.agent_executor = self._create_agent()
     
