@@ -1,0 +1,31 @@
+
+# Ghana Healthcare Context
+
+## Community Health Workers
+1. Typically members of the community who have received basic first-aid and referral training.
+2. Generally hold a high school diploma, without formal post-secondary education.
+3. Operate in remote CHPS (Community-based Health Planning and Services) zones.
+4. Rely on handwritten communication, though most have mobile phones (some smartphones).
+
+## Languages in Ghana (Pilot Region)
+- Twi, Ga, and English are the main languages used.
+
+## Healthcare System Structure
+- Ghana operates a tiered healthcare system with tertiary hospitals in major cities.
+- District hospitals serve as referral points for smaller clinics.
+- Community-based Health Planning and Services (CHPS) compounds serve rural areas.
+- Many rural clinics lack reliable electricity and internet connectivity.
+
+## Common Challenges
+- Limited record-keeping systems, often paper-based.
+- Difficulty tracking patient follow-ups.
+- Communication barriers between different levels of care.
+- Limited specialist access in rural areas.
+- Transportation difficulties for patients requiring referrals.
+
+## Skin Conditions
+- Fungal infections (like ringworm/tinea capitis) are common, especially in humid conditions.
+- Scabies outbreaks occur, particularly in schools.
+- Buruli ulcer is endemic in some areas.
+- Other common conditions include impetigo, burns from domestic accidents, and diabetic ulcers.
+        

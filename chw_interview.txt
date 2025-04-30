@@ -1,0 +1,64 @@
+
+# Interview with Community Health Worker, Central Region
+Location: CHPS compound, Central Region
+Language: Originally in Twi, translated into English
+Respondent Profile: Woman, early 30s, high school graduate, 5 years' experience
+
+## Daily Work
+- Wakes at 5:30am, begins visits by 7am
+- Visits 5-10 homes depending on distance
+- Checks on pregnant women, newborns, follows up on fever or skin rash cases
+
+## Skin Issue Management
+- Advises clinic visits for minor rashes or ringworm
+- Calls supervisor for serious cases (sores, swelling)
+- Sometimes takes pictures via WhatsApp for consultation
+- Not supposed to diagnose but community members often expect this
+- Refers cases with bleeding, infection, or unfamiliar presentations
+- Follows up if condition not improving after two visits
+
+## Record Keeping
+- Uses paper register submitted monthly to health center
+- Uses Child Welfare Card for mothers and babies
+- Sometimes keeps personal notes
+
+## Technology Use
+- Uses phone for photos, calling nurses, and WhatsApp
+- Network poor in some areas
+- Battery life is a limitation during all-day movement
+
+## App Requirements
+- Must be very simple to use
+- Clear indication of whether to refer immediately or monitor at home
+- Photo storage until network available
+- Note-taking capability for contextual information (e.g., prior herbal treatment)
+- Voice capabilities for faster comprehension
+- Visual examples of conditions
+- No prescription functionality (outside CHW scope)
+
+## Community Acceptance
+- Would accept phone photos if purpose is clearly explained
+- Privacy and confidentiality must be guaranteed (no sharing)
+- Community would trust if explanation is clear and GHS-approved
+
+## Language
+- Primarily uses Twi with patients
+- Some speak Fante, but Twi is widely understood
+- English only used for reports
+
+## Adoption Barriers
+- Would not use without supervisor approval or GHS endorsement
+- Difficult user experience
+- Battery limitations
+- Constant internet requirement
+- Community trust issues
+
+## Technical Context
+- Network available roughly 50% of the time (stronger in mornings)
+- Charging only available at home, no power banks
+- Phone battery management is a daily challenge
+
+## Motivation
+- Desires certificate or small allowance
+- Would appreciate recognition at DHMT meetings
+        

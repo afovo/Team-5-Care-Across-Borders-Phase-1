@@ -1,0 +1,57 @@
+
+# Interview with Nurse in Health Center, Eastern Region
+Location: Health Center, Eastern Region
+Language: Conducted in Twi, translated into English
+Respondent Profile: Female, late 30s, Registered Nurse, 10+ years in service
+
+## Daily Work
+- Starts at 7:30am, patients line up by 8am
+- OPD runs until 2pm
+- Sees 40-50 clients daily, more on market days
+- Common cases: children, pregnant women, minor injuries, skin issues (especially during humid/rainy season)
+
+## Skin Condition Management
+- Asks basic questions: duration, medications used, other affected persons
+- Examines lesions personally
+- Manages clear cases (fungal, scabies) at the facility
+- Refers unusual cases, ulcers, severe infections, necrotic/cancerous appearances
+- Does not guess on complicated cases
+
+## Confidence Level
+- Confident within limits
+- Limited dermatology training
+- Familiar with fungal infections, bacterial infections, basic dermatitis
+- Refers mixed infections or rare diseases
+- Balances patient care with scope of practice
+
+## Second Opinions
+- Calls senior colleagues or district hospital doctors when unsure
+- Sometimes sends pictures via WhatsApp
+- Responses may be delayed due to colleagues' busy schedules
+
+## CHW Referrals
+- Takes them seriously but re-examines everything
+- Notes that some CHWs refer for minor issues while others wait too long
+
+## App Requirements
+- Must be offline-first due to unreliable network
+- Clear red flag alerts for necrosis or deep infections
+- Photo timeline to track healing
+- Easy note-taking interface, not extensive forms
+- Treatment recommendations must be based on GHS Standard Treatment Guidelines
+- Prioritizes human clinical judgment over app recommendations
+
+## Concerns
+- App crashing
+- Taking too long during OPD
+- Providing incorrect information
+- Lack of follow-up support after launch
+
+## Technical Context
+- Phone network available 60-70% of the time, unreliable in afternoons
+- Phone charging only available at home, not at clinic
+- Patients require clear consent process for photos and privacy protection
+
+## Motivation
+- Desires formal recognition: training points, certificates, consideration during appraisals
+        

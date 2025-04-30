@@ -1,0 +1,56 @@
+{
+  "NURSE": [
+    {
+      "role": "human",
+      "content": "Can you describe a normal working day for you?"
+    },
+    {
+      "role": "assistant",
+      "content": "I start around 7:30. By 8 o'clock, patients have already lined up. OPD runs till about 2pm. I usually see 40 to 50 clients a day, more if it's market day. Mostly children, pregnant women, minor injuries, and plenty of skin issues, especially when it's humid or raining."
+    },
+    {
+      "role": "human",
+      "content": "When someone comes with a skin condition, how do you usually manage it?"
+    },
+    {
+      "role": "assistant",
+      "content": "I ask the basic questions: how long, any medication used, any other person affected. Then I check the lesion myself. If it's clear, fungal, scabies, I manage at the facility. But if it's unusual, ulcers, severe infections, anything looking necrotic or cancerous, I refer. I don't guess on complicated cases. It's not worth the risk."
+    }
+  ],
+  "DISTRICT_HEALTH_OFFICER": [
+    {
+      "role": "human",
+      "content": "Can you briefly tell me about your role in the district health system?"
+    },
+    {
+      "role": "assistant",
+      "content": "I oversee public health programs, including disease surveillance, maternal and child health, school health, and community outreach. I supervise the CHOs, the health centers, and work with facility in-charges to implement MOH and GHS programs."
+    },
+    {
+      "role": "human",
+      "content": "In your experience, how common are skin-related health issues at the district level?"
+    },
+    {
+      "role": "assistant",
+      "content": "Very common. Especially fungal infections, scabies outbreaks in schools, some burns from domestic accidents. We see dermatological conditions, but they are often underreported because the system prioritizes malaria, TB, maternal deaths. Skin disease is quietly draining productivity, but it doesn't get much programmatic attention."
+    }
+  ],
+  "HEALTH_WORKER": [
+    {
+      "role": "human",
+      "content": "Can you tell me about a normal day in your work as a community health worker?"
+    },
+    {
+      "role": "assistant",
+      "content": "Hmm, a normal day\u2026 usually I wake up early, around 5:30, and by 7 I am moving to the houses. I visit maybe 5 to 10 homes depending on the distance. I check on the pregnant women, newborns, sometimes follow up on someone with fever or skin rash."
+    },
+    {
+      "role": "human",
+      "content": "What do you do when you see a skin issue?"
+    },
+    {
+      "role": "assistant",
+      "content": "It depends. If it's just small rash or ringworm, I advise them to go to the clinic. Some will go. Some will ask for cream. If it looks bad, like sores, or swollen, I call my supervisor. Sometimes I take a picture and send it to her on WhatsApp."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+
+# Interview with District Health Officer, Volta Region
+Location: District Health Directorate, Volta Region
+Language: Conducted in English (with occasional Twi phrases)
+Respondent Profile: Male, early 40s, Deputy District Director of Public Health, 12 years' experience
+
+## Role Description
+- Oversees public health programs (disease surveillance, maternal/child health, school health, community outreach)
+- Supervises CHOs, health centers, and works with facility in-charges to implement MOH and GHS programs
+
+## Skin Conditions Context
+- Very common, especially fungal infections, scabies outbreaks in schools, burns from domestic accidents
+- Often underreported as system prioritizes malaria, TB, maternal deaths
+- Impacts productivity but receives little programmatic attention
+
+## Current Handling Protocol
+- Frontline workers refer serious cases to next level (health center nurse or district hospital)
+- CHWs not licensed to diagnose
+- Nurses manage simple infections but should escalate complex cases
+- Documentation expected but informal referrals (verbal, WhatsApp) are common
+- Frontline workers lack confidence in dermatology due to limited training
+
+## App Requirements
+- Must be simple, fast, and not create extra reporting burden
+- Offline mode essential
+- Triage risk assessment to guide referrals and reduce unnecessary overload
+- Case storage with later syncing for rural zones
+- Linkage to nurse supervisors for accountability
+- Dashboard access for DHMT to monitor cases and plan interventions
+
+## Priority Conditions
+- Tinea capitis (ringworm of the scalp)
+- Scabies
+- Impetigo
+- Buruli ulcer (endemic in some areas)
+- Diabetic ulcers (for referral)
+- Burns (small domestic injuries)
+
+## Scaling Considerations
+- Must embed into training packages
+- Align with GHS systems
+- Improve referrals
+- Reduce unnecessary patient transport
+- Increase early detection
+
+## Concerns
+- Data ownership: Ministry and GHS must retain control
+- Sustainability: Maintenance after project ends
+- Duplication: Must not replace clinical judgment or overload staff
+        
