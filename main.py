@@ -51,32 +51,87 @@ def create_knowledge_base(openai_api_key):
 # Ghana Healthcare Context
 
 ## Community Health Workers
-1. Typically members of the community who have received basic first-aid and referral training.
-2. Generally hold a high school diploma, without formal post-secondary education.
-3. Operate in remote CHPS (Community-based Health Planning and Services) zones.
-4. Rely on handwritten communication, though most have mobile phones (some smartphones).
+1. Typically start work early at 5:30am and visit 5-10 homes daily depending on distance.
+2. Check on pregnant women, newborns, and follow up on cases like fever or skin rash.
+3. Advise clinic visits for minor conditions, call supervisors for serious cases like sores or swelling.
+4. Not licensed to diagnose but community members often expect them to identify conditions.
+5. Use paper registers submitted monthly to health centers, Child Welfare Cards for mothers and babies.
+6. Use phones for photos, calling nurses, and WhatsApp, but network is poor in some areas.
+7. Network available roughly 50% of the time (stronger in mornings) with charging only available at home.
+8. Phone battery management is a daily challenge during all-day movement.
+
+## Nurses
+1. Start around 7:30am with patients lining up by 8am; OPD runs until 2pm.
+2. See 40-50 clients daily, more on market days.
+3. Common cases include children, pregnant women, minor injuries, and skin issues.
+4. Skin problems increase during humid/rainy seasons.
+5. For skin conditions, they ask basic questions about duration, medications used, and whether others are affected.
+6. Examine lesions personally and manage clear cases (fungal, scabies) at the facility.
+7. Refer unusual cases, ulcers, severe infections, or anything appearing necrotic or cancerous.
+8. Emphasize not guessing on complicated cases to minimize risk.
+9. Have limited dermatology training - confident with fungal infections, bacterial infections, basic dermatitis.
+10. Refer mixed infections or rare diseases and seek second opinions from senior colleagues or district hospital doctors.
+11. Sometimes send pictures via WhatsApp, though responses may be delayed due to colleagues' busy schedules.
+12. Phone network available 60-70% of the time but unreliable in afternoons.
+13. Phone charging only available at home, not at clinic.
+
+## District Health Officers
+1. Oversee public health programs, including disease surveillance, maternal/child health, school health, community outreach.
+2. Supervise CHOs, health centers, and work with facility in-charges to implement MOH and GHS programs.
+3. Note that skin conditions are very common but often underreported as the system prioritizes malaria, TB, maternal deaths.
+4. Recognize that skin disease impacts productivity but receives little programmatic attention.
+5. Expect frontline workers to refer serious cases to the next level (health center nurse or district hospital).
+6. Understand that documentation is expected, but informal referrals (verbal, WhatsApp) are common.
+7. Acknowledge that frontline workers lack confidence in dermatology due to limited training.
 
 ## Languages in Ghana (Pilot Region)
-- Twi, Ga, and English are the main languages used.
+- Twi is the primary communication language with patients
+- Some speak Fante, but Twi is widely understood
+- English only used for reports and documentation
+- Ga is also used in some regions
 
 ## Healthcare System Structure
-- Ghana operates a tiered healthcare system with tertiary hospitals in major cities.
-- District hospitals serve as referral points for smaller clinics.
-- Community-based Health Planning and Services (CHPS) compounds serve rural areas.
-- Many rural clinics lack reliable electricity and internet connectivity.
+- Ghana operates a tiered healthcare system with tertiary hospitals in major cities
+- District hospitals serve as referral points for smaller clinics
+- Community-based Health Planning and Services (CHPS) compounds serve rural areas
+- Many rural clinics lack reliable electricity and internet connectivity
+- CHWs are not supposed to diagnose but often expected to by community members
+- Nurses manage clear cases at facilities but refer unusual or severe cases
+- Communication between levels often relies on informal channels like WhatsApp
 
 ## Common Challenges
-- Limited record-keeping systems, often paper-based.
-- Difficulty tracking patient follow-ups.
-- Communication barriers between different levels of care.
-- Limited specialist access in rural areas.
-- Transportation difficulties for patients requiring referrals.
+- Limited record-keeping systems, primarily paper-based
+- Network availability only 50-70% of the time, stronger in mornings, weaker in afternoons
+- Phone charging only available at home, not at clinics
+- Battery life limitations during all-day movement for CHWs
+- High patient volumes (40-50 daily for nurses, more on market days)
+- Limited dermatology training for frontline workers
+- Community trust issues regarding digital tools and photo privacy
+- Inconsistent referral practices - some CHWs refer for minor issues, others wait too long
 
 ## Skin Conditions
-- Fungal infections (like ringworm/tinea capitis) are common, especially in humid conditions.
-- Scabies outbreaks occur, particularly in schools.
-- Buruli ulcer is endemic in some areas.
-- Other common conditions include impetigo, burns from domestic accidents, and diabetic ulcers.
+- Fungal infections (like ringworm/tinea capitis) are common, especially in humid conditions
+- Scabies outbreaks occur, particularly in schools
+- Buruli ulcer is endemic in some areas
+- Other common conditions include impetigo, burns from domestic accidents, and diabetic ulcers
+- Skin issues increase during humid or rainy seasons
+- Limited confidence in diagnosing mixed infections or rare skin diseases
+
+## Digital Tool Requirements
+- Must be offline-first due to unreliable network (critical priority per all stakeholders)
+- Clear red flag alerts for necrosis or deep infections
+- Photo timeline to track healing progress
+- Easy note-taking interface, not extensive forms
+- Treatment recommendations must align with GHS Standard Treatment Guidelines
+- Human clinical judgment should take priority over app recommendations
+- Simple interface for CHWs that clearly indicates whether to refer immediately or monitor
+- Voice capabilities for faster comprehension, especially for CHWs with limited reading speed
+- Visual examples of conditions for reference
+- No prescription functionality for CHWs (outside their scope)
+- Dashboard access for DHMT to monitor cases and plan interventions
+- Case storage with later syncing for rural zones
+- Privacy and confidentiality guarantees for patient photos
+- Battery-efficient design to address charging limitations
         """)
     
     # Create interview transcript files
@@ -302,19 +357,31 @@ def extract_example_dialogues():
             {"role": "human", "content": "Can you describe a normal working day for you?"},
             {"role": "assistant", "content": "I start around 7:30. By 8 o'clock, patients have already lined up. OPD runs till about 2pm. I usually see 40 to 50 clients a day, more if it's market day. Mostly children, pregnant women, minor injuries, and plenty of skin issues, especially when it's humid or raining."},
             {"role": "human", "content": "When someone comes with a skin condition, how do you usually manage it?"},
-            {"role": "assistant", "content": "I ask the basic questions: how long, any medication used, any other person affected. Then I check the lesion myself. If it's clear, fungal, scabies, I manage at the facility. But if it's unusual, ulcers, severe infections, anything looking necrotic or cancerous, I refer. I don't guess on complicated cases. It's not worth the risk."}
+            {"role": "assistant", "content": "I ask the basic questions: how long, any medication used, any other person affected. Then I check the lesion myself. If it's clear, fungal, scabies, I manage at the facility. But if it's unusual, ulcers, severe infections, anything looking necrotic or cancerous, I refer. I don't guess on complicated cases. It's not worth the risk."},
+            {"role": "human", "content": "Do you feel confident with most skin conditions?"},
+            {"role": "assistant", "content": "Confident, yes, but within limits. We didn't get detailed dermatology training. I know my fungal infections, bacterial ones, basic dermatitis. But if it's mixed infection or rare diseases, it's better to refer. We must balance patient care and our scope of practice."},
+            {"role": "human", "content": "Would you want treatment recommendations inside an app?"},
+            {"role": "assistant", "content": "Yes, but only if based on GHS Standard Treatment Guidelines. If the app tells me one thing and the District Hospital says another, it will cause trouble. No foreign protocols. Use what Ghana has approved."}
         ],
         "DISTRICT_HEALTH_OFFICER": [
             {"role": "human", "content": "Can you briefly tell me about your role in the district health system?"},
             {"role": "assistant", "content": "I oversee public health programs, including disease surveillance, maternal and child health, school health, and community outreach. I supervise the CHOs, the health centers, and work with facility in-charges to implement MOH and GHS programs."},
             {"role": "human", "content": "In your experience, how common are skin-related health issues at the district level?"},
-            {"role": "assistant", "content": "Very common. Especially fungal infections, scabies outbreaks in schools, some burns from domestic accidents. We see dermatological conditions, but they are often underreported because the system prioritizes malaria, TB, maternal deaths. Skin disease is quietly draining productivity, but it doesn't get much programmatic attention."}
+            {"role": "assistant", "content": "Very common. Especially fungal infections, scabies outbreaks in schools, some burns from domestic accidents. We see dermatological conditions, but they are often underreported because the system prioritizes malaria, TB, maternal deaths. Skin disease is quietly draining productivity, but it doesn't get much programmatic attention."},
+            {"role": "human", "content": "When frontline workers like nurses and CHWs encounter skin conditions, how are they expected to handle it?"},
+            {"role": "assistant", "content": "Primarily by referring anything serious to the next level, either the health center nurse or the district hospital. CHWs are not licensed to diagnose. Nurses can manage simple infections but should escalate complex cases. Documentation is expected, but informal referrals (verbal, WhatsApp) are common."},
+            {"role": "human", "content": "What concerns would you have about rolling out a digital tool for skin conditions?"},
+            {"role": "assistant", "content": "Data ownership: Ministry and GHS must retain control. Sustainability: If the project ends, who maintains the app? Duplication: Must not replace clinical judgment or overload staff."}
         ],
         "HEALTH_WORKER": [
             {"role": "human", "content": "Can you tell me about a normal day in your work as a community health worker?"},
             {"role": "assistant", "content": "Hmm, a normal day… usually I wake up early, around 5:30, and by 7 I am moving to the houses. I visit maybe 5 to 10 homes depending on the distance. I check on the pregnant women, newborns, sometimes follow up on someone with fever or skin rash."},
             {"role": "human", "content": "What do you do when you see a skin issue?"},
-            {"role": "assistant", "content": "It depends. If it's just small rash or ringworm, I advise them to go to the clinic. Some will go. Some will ask for cream. If it looks bad, like sores, or swollen, I call my supervisor. Sometimes I take a picture and send it to her on WhatsApp."}
+            {"role": "assistant", "content": "It depends. If it's just small rash or ringworm, I advise them to go to the clinic. Some will go. Some will ask for cream. If it looks bad, like sores, or swollen, I call my supervisor. Sometimes I take a picture and send it to her on WhatsApp."},
+            {"role": "human", "content": "Do you diagnose anything yourself?"},
+            {"role": "assistant", "content": "Oh, I'm not supposed to diagnose. We are trained just to observe, educate, and refer. But sometimes, people expect you to say what it is. Especially if they know you have been trained."},
+            {"role": "human", "content": "What language do you normally use with your patients?"},
+            {"role": "assistant", "content": "Twi. Some speak Fante, but we all understand Twi. Only when I'm writing report, I use English."}
         ]
     }
     
